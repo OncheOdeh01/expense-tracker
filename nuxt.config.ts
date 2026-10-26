@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
@@ -8,7 +8,16 @@ export default defineNuxtConfig({
   ],
 
   devtools: {
-    enabled: true
+    enabled: false
+  },
+
+  app: {
+    baseURL: '/expense-tracker/'
+  },
+
+  nitro: {
+    preset: 'github-pages'
   }
 })
+
 
